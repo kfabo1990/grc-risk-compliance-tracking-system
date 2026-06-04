@@ -40,6 +40,8 @@ The design also includes associative relations to model many-to-many relationshi
 
 The ER diagram and relational schema are included in the repository.
 
+![ER Diagram](er-diagram/ER_diagram.png)
+
 ---
 
 ## Technologies Used
@@ -55,25 +57,41 @@ The ER diagram and relational schema are included in the repository.
 
 ## Application Features
 
+### Home Page
+
+Main navigation page for the application.
+
+![Home Page](screenshots/home_page.png)
+
 ### View Risks
 
 Displays risks together with their assigned employee owner and department.
+
+![View Risks](screenshots/display_risks.png)
 
 ### View Audit Results
 
 Displays audit findings for controls, including audit information and evaluation status.
 
+![Audit Results](screenshots/display_audit_results.png)
+
 ### Add Risk
 
 Allows users to insert new risk records into the database.
+
+![Add Risk](screenshots/add_risk.png)
 
 ### Add Control
 
 Allows users to insert new control records into the database.
 
+![Add Control](screenshots/add_control.png)
+
 ### Search Risks
 
 Allows users to search risks by risk level.
+
+![Search Risk](screenshots/search_risk.png)
 
 ---
 
@@ -88,6 +106,20 @@ Allows users to search risks by risk level.
 
 ---
 
+## Key Design Decisions
+
+Several design decisions were made to improve data integrity, accountability, and normalization.
+
+- Risks are assigned to employees rather than directly to departments. Department ownership can be derived through the employee relationship, avoiding redundancy.
+
+- Audit findings are stored in the Evaluates relationship rather than the Control entity itself. This preserves historical audit results because the same control may be audited multiple times.
+
+- Foreign key constraints enforce referential integrity and prevent orphaned records.
+
+- The schema was normalized to reduce redundancy and maintain consistency across related entities.
+
+---
+
 ## Lessons Learned
 
 This project reinforced the importance of proper database normalization, foreign key constraints, and relational modeling. It also demonstrated how database design decisions directly affect application functionality and long-term maintainability.
@@ -96,11 +128,12 @@ This project reinforced the importance of proper database normalization, foreign
 
 ## Future Enhancements
 
-Potential future improvements include:
+Future versions could include dashboards, reporting capabilities, and executive-level analytics.
 
-* Dashboard and reporting capabilities
-* User authentication and role-based access control
-* Compliance framework reporting
-* Risk trend analysis
-* Automated audit reporting
-* Interactive visualizations
+Examples of questions the system could support include:
+
+- How much potential financial risk is currently exposed due to controls that failed their most recent audit?
+
+- Which compliance requirements have the highest number of unresolved audit findings?
+
+- Which departments own the greatest concentration of high-risk issues?
