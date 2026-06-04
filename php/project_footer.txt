@@ -1,0 +1,10 @@
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 GRC Risk and Compliance Tracking System. Created for CS 530 Database.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GRC Risk and Compliance Tracking System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <nav>
+        <a href="project_home.php">Home</a>
+        <a href="display_risks.php">Display Risks</a>
+        <a href="display_audit_results.php">Audit Results</a>
+        <a href="insert_risk.php">Add Risk</a>
+        <a href="insert_control.php">Add Control</a>
+        <a href="search_risk.php">Search Risks</a>
+    </nav>
+
+    <main>

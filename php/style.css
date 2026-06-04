@@ -1,0 +1,90 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+nav {
+    background-color: #1f3a5f;
+    padding: 14px 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto 80px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #1f3a5f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #cfd6df;
+}
+
+th {
+    background-color: #e9eef5;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+input, select {
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #aacfe4;
+    width: 250px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: auto;
+    background-color: #1f3a5f;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #2d527f;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    margin: 30px 0;
+    font-size: 14px;
+}
